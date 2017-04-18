@@ -24,3 +24,27 @@ a:hover {color:#7c7c7c; text-decoration:underline;}
 
 body{font-size:12px; font-family:"ËÎÌו";}
 .wrapper{margin:0 auto ; width:1002px;}
+
+/*header*/
+.header{
+    height: 200px;
+    background-color: #bf21ff;
+}
+
+/*container*/
+.container{
+    height: auto;
+    background-color: #7c7c7c;
+}
+
+/*footer*/
+.footer{
+    height: 200px;
+    background-color: goldenrod;
+}
+
+.btn{
+    background-color: #bf21ff;
+    width: 200px;
+    height: 80px;
+}

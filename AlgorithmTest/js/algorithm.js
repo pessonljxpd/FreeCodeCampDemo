@@ -1,18 +1,50 @@
-function rot13(str) { // LBH QVQ VG!
-    var exp = /[a-zA-Z]/;
-    var myArr =  str.split("").filter(function(val){
-        if(exp.test(val)){
-            return String.fromCharCode(val.charCodeAt(0)-13);
-        }else{
-            return val;
+//Setup
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["Javascript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUp(firstName, prop) {
+// Only change code below this line
+    for(var i=0; i<contacts.length;i++){
+        if(contacts[i].firstName === firstName){
+            if(contacts[i][prop] !== undefined){
+                return contacts[i][prop];
+            }else{
+                return "No such property";
+            }
+        }else if(i === contacts.length-1){
+            return "No such contact";
         }
-    });
-    //return myArr.join("");
-    return myArr;
+    }
+// Only change code above this line
 }
 
-function test(){
-    // Change the inputs below to test
-    rot13("SERR PBQR PNZC");
+function test() {
+// Change these values to test your function
+    lookUp("Kristian", "lastName");
 }
 
