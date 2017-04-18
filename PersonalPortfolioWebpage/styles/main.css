@@ -1,0 +1,34 @@
+.favorites {
+    background: grey;
+    color: white;
+    border: thin solid black;
+    padding: .2em;
+}
+
+span {
+    display: block;
+}
+
+#p1,
+#p2 {
+    background: seagreen;
+    color: #000;
+    border: thin dashed black;
+    padding: .1em;
+}
+
+blockquote{
+    background: rebeccapurple;
+    color: white;
+    boder: thick solid black;
+padding: .1em;
+    margin: 3em;
+}
+
+q{
+    background: #000;
+    color:white;
+    border: thin solid white;
+    padding: 2em;
+    margin: 2em;
+}

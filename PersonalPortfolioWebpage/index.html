@@ -8,23 +8,24 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css"/>
     <link rel="script" href="scripts/main.js"/>
     <link rel="prefetch" href="page1.html"/>
-    <link rel="icon shortcut" type="image/x-icon" href="http://fanyi.baidu.com/static/translation/img/favicon/favicon-32x32_ca689c3.png" >
+    <link rel="icon shortcut" type="image/x-icon"
+          href="http://fanyi.baidu.com/static/translation/img/favicon/favicon-32x32_ca689c3.png">
     <style type="text/css">
-        header{
+        header {
             background-color: aqua;
         }
     </style>
     <!--指定打印时的样式-->
     <style media="screen AND  (max-width:800px)">
-        a{
-            color:Red;
-            font-weight:bold;
-            font-style:italic
+        a {
+            color: Red;
+            font-weight: bold;
+            font-style: italic
         }
     </style>
     <style media="print">
-        a{
-            color:darkgreen;
+        a {
+            color: darkgreen;
             font-family: "Microsoft YaHei UI Light";
             font-style: italic;
         }
@@ -62,14 +63,72 @@
 <!--/header-->
 <!--main-->
 <main>
-    <section>
-        <div class="content">
-            I like <a href="./page1.html">HTML</a>.
+    <article>
+        <section>
+            <div class="content">
+                I like <a href="./page1.html">HTML</a>.
+                <hr>
+                I like CSS.<br>
+                Enter what you like: <input disabled>
+            </div>
+        </section>
+        <section>
+            <hgroup>
+                <h1>Thi is h1</h1>
+                <h2>Thi is h2</h2>
+                <h3>Thi is h3</h3>
+            </hgroup>
+            <h4>Thi is h4</h4>
+            <h5>Thi is h5</h5>
+            <h6>Thi is h6</h6>
+        </section>
+        <section>
+            <p>Test</p>
             <hr>
-            I like CSS.<br>
-            Enter what you like: <input disabled>
-        </div>
-    </section>
+            <p>This is Test</p>
+        </section>
+        <section>
+            <div class="favorites">
+                <p>Test div</p>
+                <p>This is test div</p>
+            </div>
+            <span class="favorites">
+            Test divThis is test div1111
+        </span>
+            <span class="favorites">
+            Test divThis is test div222
+        </span>
+            <p id="p1">
+                Hello p1111
+            </p>
+            <p id="p2">Hello p2222</p>
+        </section>
+        <section>
+        <pre>
+        <code>
+            var fruits = ["XML", "HTML", "CSS", "Java"];
+            for (var i = 0; i < fruits.length; i++) {
+                document.writeln("I like " + fruits[i]);
+            }
+        </code>
+            </pre>
+        </section>
+        <section>
+            <blockquote cite="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"> Cascading Style Sheets (CSS) is a
+                style
+                sheet language used for
+                describing the look and formatting of a document written in a markup language.
+            </blockquote>
+        </section>
+        <section>
+            <q cite="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">
+                Cascading Style Sheets (CSS) is a style
+                sheet language used for
+                describing the look and formatting of a document written in a markup language.
+            </q>
+        </section>
+    </article>
+
 </main>
 <!--/main-->
 <!--footer-->
