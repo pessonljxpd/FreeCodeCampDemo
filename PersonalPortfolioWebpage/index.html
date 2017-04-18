@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="5; https://www.baidu.com">-->
     <title>ADark Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
     <link rel="script" href="scripts/main.js"/>
+    <link rel="prefetch" href="page1.html"/>
+    <link rel="icon shortcut" type="image/x-icon" href="http://fanyi.baidu.com/static/translation/img/favicon/favicon-32x32_ca689c3.png" >
+    <style type="text/css">
+        header{
+            background-color: aqua;
+        }
+    </style>
+    <!--指定打印时的样式-->
+    <style media="screen AND  (max-width:800px)">
+        a{
+            color:Red;
+            font-weight:bold;
+            font-style:italic
+        }
+    </style>
+    <style media="print">
+        a{
+            color:darkgreen;
+            font-family: "Microsoft YaHei UI Light";
+            font-style: italic;
+        }
+    </style>
+
+    <script defer>
+        document.write("This is from the script");
+    </script>
+
+    <noscript>
+        <h1>JavaScript is required!</h1>
+        <p>You can not use this page without JavaScript!</p>
+    </noscript>
 </head>
 <body>
 <!--header-->
@@ -35,7 +67,7 @@
             I like <a href="./page1.html">HTML</a>.
             <hr>
             I like CSS.<br>
-            Enter what you like:  <input disabled>
+            Enter what you like: <input disabled>
         </div>
     </section>
 </main>
