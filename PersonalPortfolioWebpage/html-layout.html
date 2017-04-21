@@ -20,14 +20,19 @@
 
         #nav {
             width: 20%;
-            height: 600px;
+            height: 750px;
             background: gray;
             line-height: 130px;
             float: left;
         }
 
-        #nav a {
-            background-color: yellowgreen;
+        #nav > div {
+            padding-left: 10%;
+
+        }
+
+        #nav > div > a {
+            background-color: #bf21ff;
             text-decoration: none;
         }
 
@@ -39,13 +44,18 @@
             float: right;
             background-color: slategrey;
             width: 80%;
-            height: 600px;
+            height: 750px;
+        }
+
+        #section > div {
+            padding: 10%;
         }
 
         #footer {
             /*清楚浮动效果*/
             clear: both;
             color: white;
+            height: 20%;
             background-color: black;
         }
     </style>
@@ -55,19 +65,20 @@
     <h1>City Gallery</h1>
 </div>
 <div id="nav">
-    <a href="#london"><span>London</span></a>
-    <br>
-    <a href="#paris"><span>Paris</span></a>
-    <br>
-    <a href="#tokyo"><span>Tokyo</span></a>
-    <br>
+    <div><a href="#london"><span>London</span></a></div>
+    <div><a href="#paris"><span>Paris</span></a></div>
+    <div><a href="#tokyo"><span>Tokyo</span></a>
+    </div>
 </div>
 <div id="section">
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan
-        area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia,
-        its history going back to its founding by the Romans, who named it Londinium.</p>
+    <div>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+            metropolitan
+            area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia,
+            its history going back to its founding by the Romans, who named it Londinium.</p>
+    </div>
 </div>
 <div id="footer">
     Copyright W3School.com.cn
