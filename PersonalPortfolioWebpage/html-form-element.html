@@ -5,16 +5,49 @@
     <title>Html 表单元素</title>
 </head>
 <body>
-<form>
-    <input type="text" name="username" value="Jack">
-    <input type="password" name="password" value="123">
-    <input type="reset">
-    <select name="songs">
-        <option>凉凉</option>
-        <option>成都</option>
-        <option selected>少年锦时</option>
-        <option>来生缘</option>
-    </select>
-</form>
+<fieldset>
+    <legend>表单提交|重置</legend>
+    <form>
+        <input type="text" name="username" value="Jack">
+        <br>
+        <input type="password" name="password">
+        <br>
+
+        <select name="songs">
+            <option selected>凉凉</option>
+            <option>成都</option>
+            <option >少年锦时</option>
+            <option>来生缘</option>
+        </select>
+        <br>
+        <input type="submit">
+        <input type="reset">
+        <br>
+    </form>
+</fieldset>
+<input type="checkbox" name="vehicle" value="bike">
+<input type="checkbox" name="vehicle" value="car">
+<input type="checkbox" name="vehicle" value="船">
+<br>
+<input type="date" name="date">date<br>
+<input type="datetime" name="datetime">datetime<br>
+<input type="datetime-local">datetime-local<br>
+<input type="month">month<br>
+<input type="week">week<br>
+<input type="time">time<br>
+<input type="tel">tel<br>
+<input type="button">button<br>
+<input type="hidden">hidden<br>
+<input type="url">url<br>
+<input type="search">search<br>
+<input type="email">email<br>
+<input type="image">image<br>
+<input type="file">file<br>
+
+<input type="number" min="1" max="20" step="5">
+<input type="color">
+
+<input type="range" max="10" min="1" name="points">
+
 </body>
 </html>
