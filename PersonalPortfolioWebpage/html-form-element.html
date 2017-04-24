@@ -44,10 +44,21 @@
 <input type="image">image<br>
 <input type="file">file<br>
 
-<input type="number" min="1" max="20" step="5">
+<input type="number" min="0" max="20" step="5" size="40">
 <input type="color">
 
 <input type="range" max="10" min="1" name="points">
+<input type="text" list="browsers" name="firstname" value="John" size="20" maxlength="80" autofocus >
+<datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
 
+<br>
+
+<input type="text" pattern="[A-Za-z]{3}">Three letter
 </body>
 </html>
